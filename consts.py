@@ -1,4 +1,4 @@
-INTERVAL_IN_S = 60 * 24 * 15  # 15 days
+INTERVAL_IN_S = 60 * 60 * 24 * 15  # 15 days
 
 LIFETIME = dict()
 
