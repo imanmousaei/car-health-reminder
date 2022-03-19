@@ -1,0 +1,13 @@
+{
+    "Battery_water": 10000,
+    "Engine_check": 10000,
+    "Gear_oil": 10000,
+    "Oil_filter": 10000,
+    "Room_filter": 10000,
+    "Benzine_filter": 10000,
+    "Brake_fluid": 10000,
+    "Engine_oil": 30000,
+    "Air_filter": 35000,
+    "Tire_rotation": 45000,
+    "Timing_belt": 80000
+}
