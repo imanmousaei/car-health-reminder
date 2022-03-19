@@ -1,6 +1,7 @@
 import json
 from time import sleep
 import telegram
+from prettytable import PrettyTable
 
 from consts import INTERVAL_IN_S, LIFETIME
 from telegram_config import BOT_TOKEN, CHAT_ID
@@ -28,7 +29,6 @@ def check_car():
 
 
 def get_formatted(should_check):
-    from prettytable import PrettyTable
     table = PrettyTable(['Name', 'KM'])
 
     for key in should_check:
