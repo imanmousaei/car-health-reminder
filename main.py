@@ -1,7 +1,8 @@
 import json
+from time import sleep
 import telegram
 
-from consts import LIFETIME
+from consts import INTERVAL_IN_S, LIFETIME
 from telegram_config import BOT_TOKEN, CHAT_ID
 
 
@@ -42,5 +43,7 @@ def telegram_reminder(should_check):
 
 
 if __name__ == '__main__':
-    should_check = check_car()
-    telegram_reminder(should_check)
+    while True:
+        should_check = check_car()
+        telegram_reminder(should_check)
+        sleep(INTERVAL_IN_S)

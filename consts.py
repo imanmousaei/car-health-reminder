@@ -1,3 +1,5 @@
+INTERVAL_IN_S = 60 * 24 * 15  # 15 days
+
 LIFETIME = dict()
 
 TIMING_BELT = "Timing_belt"  # تسمه تایم
