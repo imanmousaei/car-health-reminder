@@ -1,13 +1,15 @@
 {
-    "Battery_water": 10000,
-    "Engine_check": 10000,
-    "Gear_oil": 10000,
-    "Oil_filter": 10000,
-    "Room_filter": 10000,
-    "Benzine_filter": 10000,
-    "Brake_fluid": 10000,
+    "Battery_water": 5000,
+    "Room_filter": 20000,
+    "Benzine_filter": 20000,
+    "Engine_check": 25000,
     "Engine_oil": 30000,
+    "Brake_fluid": 30000,
     "Air_filter": 35000,
+    "Oil_filter": 35000,
+    "Tire": 40000,
     "Tire_rotation": 45000,
-    "Timing_belt": 80000
+    "Timing_belt": 80000,
+    "Gear_oil": 125000,
+    "Clutch_plate": 125000
 }
