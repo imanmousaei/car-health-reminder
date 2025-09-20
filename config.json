@@ -12,7 +12,6 @@
         "Benzine Filter": 40000,
         "Tormoz Fluid": 40000,
 
-
         "Tasme Time": 60000,
         "Sham": 60000,
         "Wire e Sham": 60000,
@@ -25,6 +24,7 @@
     "only_write_should_be_checked_items": true,
 
     "last_changes": {
+        "Benzine Filter": 37000,
         "Roghan motor": 40000,
         "Roghan Filter": 40000,
         "Hava Filter": 40000,
