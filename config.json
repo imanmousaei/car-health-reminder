@@ -1,24 +1,33 @@
 {
+    "check_intervals": {
+        "Roghan motor": 5000,
+        "Roghan Filter": 5000,
+        "Hava Filter": 5000,
+
+        "Check Tires": 10000,
+        "Cabin Filter": 20000,
+
+        "Battery": 30000,
+        "Lent & Disk Tormoz": 30000,
+        "Benzine Filter": 40000,
+        "Tormoz Fluid": 40000,
+
+
+        "Tasme Time": 60000,
+        "Sham": 60000,
+        "Wire e Sham": 60000,
+        "Other Tasmes": 60000,
+        "Automate Gearbox Roghan": 60000
+    },
+
+
+    "now_km": 40000,
+    "only_write_should_be_checked_items": true,
+
     "last_changes": {
-        "Timing_belt": 0,
-
-        "Tire_rotation": 25000,
-        "Tire": 0,
-        
-        "Gear_oil": 25000,
-        "Clutch_plate": 25000,
-
-        "Engine_oil": 25000,
-        "Battery_water": 0,
-
-        "Air_filter": 25000,
-        "Oil_filter": 25000,
-
-        "Room_filter": 0,
-        "Benzine_filter": 0,
-
-        "Brake_fluid": 0,
-        
-        "Engine_check": 0
+        "Roghan motor": 40000,
+        "Roghan Filter": 40000,
+        "Hava Filter": 40000,
+        "Battery": 40000
     }
 }
