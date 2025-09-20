@@ -1,6 +1,7 @@
 import json
 from time import sleep
 import telegram
+import asyncio
 from prettytable import PrettyTable
 
 from consts import INTERVAL_IN_S, LIFETIME
@@ -15,12 +16,18 @@ def load_config():
 
 def check_car():
     should_check = dict()
+
     config = load_config()
     last_changes = config["last_changes"]
+    check_intervals = config["check_intervals"]
 
-    for key in last_changes:
-        value = last_changes[key]
-        should_check[key] = value + LIFETIME[key]
+    for key in check_intervals:
+        should_check_km = last_changes.get(key, 0) + check_intervals[key]
+        if config["only_write_should_be_checked_items"]:
+            if should_check_km <= config["now_km"]:
+                should_check[key] = should_check_km
+        else:
+            should_check[key] = should_check_km
 
     should_check = dict(sorted(should_check.items(), key=lambda item: item[1]))
     json.dump(should_check, open('should_check.json', 'w'), indent=4)
@@ -39,11 +46,10 @@ def get_formatted(should_check):
 
 def telegram_reminder(should_check):
     bot = telegram.Bot(token=BOT_TOKEN)
-    bot.sendMessage(chat_id=CHAT_ID, text=get_formatted(should_check), parse_mode=telegram.ParseMode.HTML)
+    asyncio.run(bot.sendMessage(chat_id=CHAT_ID, text=get_formatted(should_check), parse_mode="HTML"))
 
 
 if __name__ == '__main__':
-    while True:
-        should_check = check_car()
-        telegram_reminder(should_check)
-        sleep(INTERVAL_IN_S)
+    should_check = check_car()
+    telegram_reminder(should_check)
+    # sleep(INTERVAL_IN_S)

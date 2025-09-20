@@ -40,3 +40,9 @@ LIFETIME[BENZINE_FILTER] = 20000  # should change it every 20,000km
 
 BRAKE_FLUID = "Brake_fluid"  # روغن ترمز
 LIFETIME[BRAKE_FLUID] = 30000  # should change it every min(60,000km or 2 years)~=30,000km
+
+Other_Tasmes = "Other Tasmes"  # مانند تسمه دینام و کمپرسور کولر و پمپ فرعی
+LIFETIME[Other_Tasmes] = 60000
+
+battery = "battery"
+LIFETIME[battery] = -1  # every 2/3 years 
