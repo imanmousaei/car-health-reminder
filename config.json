@@ -4,7 +4,7 @@
         "Roghan Filter": 5000,
         "Hava Filter": 5000,
 
-        "Check Tires": 10000,
+        "Reverse Tires": 10000,
         "Cabin Filter": 20000,
 
         "Battery": 30000,
@@ -28,6 +28,7 @@
         "Roghan motor": 40000,
         "Roghan Filter": 40000,
         "Hava Filter": 40000,
-        "Battery": 40000
+        "Battery": 40000,
+        "Reverse Tires": 40000
     }
 }
